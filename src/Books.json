@@ -1,0 +1,34 @@
+ [
+    {
+      "Img": "https://m.economictimes.com/thumb/msid-70119616,width-1200,height-900,resizemode-4,imgsize-160034/rohit-sharma-the-odi-cricket-phenomenon.jpg",
+      "name": "Rohit sharma",
+      "Email": "rohit123@gmail.com",
+      "Address": "Mumbai",
+      "qualification": "12",
+      "contact": "0123456789"
+    },
+    {
+      "Img": "https://static.toiimg.com/thumb/msid-95062568,width-1280,resizemode-4/95062568.jpg",
+      "name": "Virat kohli",
+      "Email": "vking43@gmail.com",
+      "Address": "Delhi",
+      "qualification": "10",
+      "contact": "1234578960"
+    },
+    {
+      "Img": "https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/articleimages/2022/07/07/dhoni-1124573-1657185380.jpg?itok=aWYXXCw_",
+      "name": "MS Dhoni",
+      "Email": "mahi07@gamil.com",
+      "Address": "Ranchi",
+      "qualification": "B.com",
+      "contact": "5388537588"
+    },
+    {
+      "Img": "https://resources.pulse.icc-cricket.com/ICC/photo/2022/08/15/9891ff6b-2407-4e5e-997c-77419e168b94/GettyImages-1241824431.jpg",
+      "name": "Suryakumar Yadav",
+      "Email": "surya18@gmail.com",
+      "Address": "Mumbai",
+      "qualification": "12",
+      "contact": "04393042309"
+    }
+]
