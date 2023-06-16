@@ -9,7 +9,7 @@ const Task2 = (props) => {
           <div className="card-body ps-4">
             <label className="font-bold" style={{ width: "7rem" }}>name </label>  : {name}<br />
             <label className="font-bold" style={{ width: "7rem" }}>type</label>  : {type}<br />
-            <label className="font-bold" style={{ width: "7rem" }}>price </label>  : {price}<br />
+            <label className="font-bold" style={{ width: "7rem" }}>price </label>  : {price}<br /> 
           </div>
         </div>
     </div>
