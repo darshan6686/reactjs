@@ -5,7 +5,8 @@ import App from './App';
 // import Booklist from './Booklist';
 // import Fake from './Fake';
 // import Listapp from './Listapp';
-import Tasklist2 from './Tasklist2';
+// import Tasklist2 from './Tasklist2';
+import Tasklist3 from './filter/Tasklist3';
 import reportWebVitals from './reportWebVitals';
 import "jquery";
 import "@popperjs/core/dist/umd/popper";
@@ -16,7 +17,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
   <App />
-  <Tasklist2 />
+  <Tasklist3 />
   </React.StrictMode>
 );
 

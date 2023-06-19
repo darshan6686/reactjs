@@ -8,9 +8,9 @@ const Tasklist2 = () => {
   return (
     <>
       {
-        tasks.filter((elem) => {return form === elem.type}).map((elem) => {
+        tasks.filter((elem) => {return form === elem.type }).map((elem) => {
         return (
-            <Task2 name={elem.name} type={elem.type} price={elem.price} />
+            <Task2 img={elem.img} name={elem.name} type={elem.type} price={elem.price} />
         )
       })}
     </>
