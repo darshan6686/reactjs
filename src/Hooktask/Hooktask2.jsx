@@ -19,8 +19,9 @@ const Hooktask1 = () => {
   let form = ["drama","action","love"];
   return (
     <>
-    <div>
-        {form.map((elem) => {return (<div>
+     <div>
+        {form.map((elem) => {return (
+        <div>
             <h1 className="ml-20 text-5xl font-bold my-5">{elem}</h1>
             <table className="table-fixed w-11/12 mx-auto">
                 <thead className="bg-black text-white">
@@ -47,7 +48,7 @@ const Hooktask1 = () => {
                     ))}
                 </tbody>
             </table>
-    </div>)})
+        </div>)})
                 }
             <button onClick={handleClick}className="px-20 py-3 bg-blue-600 text-white ml-20 my-5">Clear All</button>
       </div>
