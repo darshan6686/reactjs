@@ -57,6 +57,19 @@ const Compo = () => {
         )
     }
 
+    let editdata = (itemId1) => {
+        Usecount(
+            count.filter((ele)=>{
+                if(ele.id === itemId1){
+                    ele.Name = "darshan pansheriya";
+                    ele.Email= 'ddddd123@gmail.com';
+                    ele.Location ='New York';
+                    ele.Phone =  9422421348;
+                }
+                return true
+            })
+        )
+    }
 
   return (
     <div>
@@ -65,11 +78,11 @@ const Compo = () => {
                 <h1>Products</h1>
                 <button className='bg-blue-500 px-4 text-white'>Add groups</button>
            </div>
-           <input type='search' className='w-8/12 border h-10 bg-blue-100 px-3 mt-5' placeholder='Search' />
+           <input type='search' className='w-8/12 border h-10 bg-blue-100 px-3 mt-5 focus:outline-none' placeholder='Search' />
 
            <table className="mt-12 table-fixed w-full border-collapse border">
             <thead>
-                <tr className='h-16'>
+                <tr className='h-16 bg-black text-white'>
                     <th className='pl-5'>Name</th>
                     <th>Email</th>
                     <th>Location</th>
@@ -86,8 +99,8 @@ const Compo = () => {
                                 <td>{el.Location}</td>
                                 <td>{el.Phone}</td>
                                 <td>
-                                    <button className='border-2 text-blue-600 border-blue-700 px-3 rounded-md'>Edit</button>
-                                    <button className='border-2 text-red-600 border-red-600 px-3 rounded-md ml-5' onClick={()=>remov(el.id)}>Delete</button>
+                                    <button className='border-2 text-blue-600 border-blue-700 px-3 rounded-md hover:bg-blue-600 hover:text-white' onClick={()=>editdata(el.id)}>Edit</button>
+                                    <button className='border-2 text-red-600 border-red-600 px-3 rounded-md ml-5 hover:bg-red-600 hover:text-white' onClick={()=>remov(el.id)}>Delete</button>
                                 </td>
                             </tr>
                         )
