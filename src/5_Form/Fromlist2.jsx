@@ -26,12 +26,11 @@ const Fromlist2 = () => {
 
   function Fsubmit(e){
     e.preventDefault();
-    alert("Submitted Successfully");
   }
 
   return (
     <div>
-      <form className='bg-black w-1/3 h-auto mx-auto p-5'onSubmit={Fsubmit}>
+      <form className='bg-black w-1/3 h-auto mx-auto p-5' onSubmit={Fsubmit}>
           <div className='my-4'>
             <label className='text-xl text-white'>First Name : </label><br/>
             <input type='text' className='border w-full h-10' onChange={handleName} />
