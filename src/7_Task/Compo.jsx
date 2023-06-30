@@ -103,6 +103,22 @@ const Compo = () => {
   //         setsPhone(sPhone)
   //     }
 
+
+  let [creat, setCreat] = useState(array);
+
+  function create(){
+      Usecount(array)
+
+      setCreat([{
+        "id": 7,
+        "Name": `${Name}`,
+        "Email": `${Email}`,
+        "Location": `${Location}`,
+        "Phone": `${Phone}`
+      },...count])
+      Usecount(creat);
+  }
+
   return (
     <>
       <div className="min-h-screen flex-col justify-center inline-block">
@@ -145,7 +161,7 @@ const Compo = () => {
               <input
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline focus:shadow-outline"
                 id="Phone"
-                type="text"
+                type="tel"
                 placeholder="Phone"
                 value={Phone}
                 onChange={Fphone}
@@ -161,7 +177,7 @@ const Compo = () => {
         <div className="w-9/12 h-auto p-5 shadow-2xl mx-auto mt-5">
           <div className="flex justify-between">
             <h1>Products</h1>
-            <button className="bg-blue-500 px-4 text-white">Add groups</button>
+            <button className="bg-blue-500 px-4 text-white" onClick={create}>Create</button>
           </div>
           <input
             type="search"

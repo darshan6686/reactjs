@@ -10,8 +10,8 @@ const ExpanceData = (props) => {
   return (
     <div>
       <div className='text-xl flex'>
-        <div>{day}</div>
-        <div>{month}</div>
+        <div>{day}-</div>
+        <div>{month}-</div>
         <div>{year}</div>
       </div>
     </div>
