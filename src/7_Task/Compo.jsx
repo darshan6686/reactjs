@@ -52,7 +52,7 @@ const Compo = () => {
   let remov = (itemId) => {
     Usecount(
       count.filter((elem) => {
-        return elem.id !== itemId;
+        return elem.Name !== itemId;
       })
     );
   };
@@ -85,7 +85,7 @@ const Compo = () => {
   function editdata(id1) {
     Usecount(
       count.filter((ele) => {
-        if (ele.id === id1) {
+        if (ele.Name === id1) {
           ele.Name = Name;
           ele.Email = Email;
           ele.Location = Location;
@@ -108,9 +108,7 @@ const Compo = () => {
 
   function create(){
       Usecount(array)
-
       setCreat([{
-        "id": 7,
         "Name": `${Name}`,
         "Email": `${Email}`,
         "Location": `${Location}`,
@@ -138,7 +136,7 @@ const Compo = () => {
             <div className="mb-4">
               <input
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline focus:shadow-outline"
-                id="Email"
+                id="Email" 
                 type="email"
                 placeholder="Email"
                 value={Email}
@@ -185,7 +183,7 @@ const Compo = () => {
             placeholder="Search"
           />
 
-          <table className="mt-12 table-fixed w-full border-collapse border">
+          <table className="mt-12 table-fixed w-full">
             <thead>
               <tr className="h-16 bg-black text-white">
                 <th className="pl-5">Name</th>
@@ -198,7 +196,7 @@ const Compo = () => {
             <tbody>
               {count.map((el) => {
                 return (
-                  <tr className="h-16 border border-collapse">
+                  <tr className="h-16 border border-black">
                     <td className="pl-5">{el.Name}</td>
                     <td>{el.Email}</td>
                     <td>{el.Location}</td>
@@ -206,13 +204,13 @@ const Compo = () => {
                     <td>
                       <button
                         className="border-2 text-blue-600 border-blue-700 px-3 rounded-md hover:bg-blue-600 hover:text-white"
-                        onClick={() => editdata(el.id)}
+                        onClick={() => editdata(el.Name)}
                       >
                         Edit
                       </button>
                       <button
                         className="border-2 text-red-600 border-red-600 px-3 rounded-md ml-5 hover:bg-red-600 hover:text-white"
-                        onClick={() => remov(el.id)}
+                        onClick={() => remov(el.Name)}
                       >
                         Delete
                       </button>

@@ -2,9 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App from './App';
-// import Form2 from './6_Form_project/Form2'
-import Compo from './7_Task/Compo';
-// import Main from './8_Expances/Main';
+// import Demo from './0_pratice/Demo';
+import Task from './9_useeffect/Task';
+// import Atask from './9_useeffect/Atask';
+// import Normal from './9_useeffect/Normal';
 import reportWebVitals from './reportWebVitals';
 import "jquery";
 import "@popperjs/core/dist/umd/popper";
@@ -14,7 +15,7 @@ import "bootstrap/dist/css/bootstrap.css";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <Compo />
+  <Task />
   </React.StrictMode>
 );
 
