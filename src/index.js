@@ -3,9 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App from './App';
 // import Demo from './0_pratice/Demo';
-import Task from './9_useeffect/Task';
-// import Atask from './9_useeffect/Atask';
-// import Normal from './9_useeffect/Normal';
+// import Taskk3 from './0_pratice/Taskk3';
+import Main from './10_Router/Main';
 import reportWebVitals from './reportWebVitals';
 import "jquery";
 import "@popperjs/core/dist/umd/popper";
@@ -15,7 +14,7 @@ import "bootstrap/dist/css/bootstrap.css";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <Task />
+  <Main />
   </React.StrictMode>
 );
 
