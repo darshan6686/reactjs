@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// import App from './App';
-// import Demo from './0_pratice/Demo';
-// import Taskk3 from './0_pratice/Taskk3';
-import Main from './10_Router/Main';
+// import Parentcomponet from './14_Callbaack/Parentcomponet';
+// import Taskmemo from './12_Usememo/Taskmemo';
+import Understand_Usecallback from './15_Atask/Understand_Usecallback';
 import reportWebVitals from './reportWebVitals';
 import "jquery";
 import "@popperjs/core/dist/umd/popper";
@@ -14,7 +13,7 @@ import "bootstrap/dist/css/bootstrap.css";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <Main />
+  <Understand_Usecallback />
   </React.StrictMode>
 );
 
