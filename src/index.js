@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// import Parentcomponet from './14_Callbaack/Parentcomponet';
-// import Taskmemo from './12_Usememo/Taskmemo';
-import Understand_Usecallback from './15_Atask/Understand_Usecallback';
+// import UseRef from './18_UseRef/UseRef';
+// import Hook from './19_customhook/Hook';
+// import Countone from './20_UseReducer/Countone';
+import Counttwo from './20_UseReducer/Counttwo';
 import reportWebVitals from './reportWebVitals';
 import "jquery";
 import "@popperjs/core/dist/umd/popper";
@@ -13,7 +14,7 @@ import "bootstrap/dist/css/bootstrap.css";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <Understand_Usecallback />
+  <Counttwo />
   </React.StrictMode>
 );
 
