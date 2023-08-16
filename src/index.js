@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 // import UseRef from './18_UseRef/UseRef';
 // import Hook from './19_customhook/Hook';
-// import Countone from './20_UseReducer/Countone';
-import Counttwo from './20_UseReducer/Counttwo';
+import Countone from './20_UseReducer/Countone';
+// import Count from './20_UseReducer/Count';
+// import Counttwo from './20_UseReducer/Counttwo';
 import reportWebVitals from './reportWebVitals';
 import "jquery";
 import "@popperjs/core/dist/umd/popper";
@@ -14,7 +15,7 @@ import "bootstrap/dist/css/bootstrap.css";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <Counttwo />
+  <Countone />
   </React.StrictMode>
 );
 
