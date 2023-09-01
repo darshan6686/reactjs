@@ -1,11 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// import UseRef from './18_UseRef/UseRef';
-// import Hook from './19_customhook/Hook';
-import Countone from './20_UseReducer/Countone';
-// import Count from './20_UseReducer/Count';
-// import Counttwo from './20_UseReducer/Counttwo';
+import Main from './22_Redux_saga_toolkit/Main'
+import { Provider } from 'react-redux';
+import store from './22_Redux_saga_toolkit/Store'
 import reportWebVitals from './reportWebVitals';
 import "jquery";
 import "@popperjs/core/dist/umd/popper";
@@ -15,7 +13,9 @@ import "bootstrap/dist/css/bootstrap.css";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <Countone />
+  <Provider store={store}>
+    <Main />
+  </Provider>
   </React.StrictMode>
 );
 

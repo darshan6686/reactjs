@@ -20,7 +20,7 @@ const Countone = () => {
             return state
     }
 }
-let [count, dispatch] = useReducer(reducer)
+let [count, dispatch] = useReducer(reducer, 0)
 
     let f1 = (e) => {
         setItem(e.target.value)
