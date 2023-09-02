@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Main from './22_Redux_saga_toolkit/Main'
 import { Provider } from 'react-redux';
-import store from './22_Redux_saga_toolkit/Store'
+import Main from './23_Redux_Saga_Toolkit/Main'
+import Header from './23_Redux_Saga_Toolkit/Header'
+import Cart from './23_Redux_Saga_Toolkit/Cart';
+import store from './23_Redux_Saga_Toolkit/Store'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import "jquery";
 import "@popperjs/core/dist/umd/popper";
@@ -14,7 +17,13 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
   <Provider store={store}>
-    <Main />
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path='/' element={<Main />} />
+        <Route path='/Cart' element={<Cart />} />
+      </Routes>
+    </BrowserRouter>
   </Provider>
   </React.StrictMode>
 );

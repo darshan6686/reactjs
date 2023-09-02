@@ -17,8 +17,13 @@
     },
     {
       "id": 4,
-      "title": "iphone",
-      "model": "iphone 14 pro max"
+      "title": "json-server 4",
+      "author": "typicode"
+    },
+    {
+      "id": 5,
+      "title": "json-server 5",
+      "author": "typicode"
     }
   ]
 }
